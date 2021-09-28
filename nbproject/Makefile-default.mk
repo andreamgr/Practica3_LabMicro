@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=main.c "../../Alan Cruz/Downloads/YT_02_MPLAB_Lcd/ProyectoLCD.X/lcd_hd44780.c"
+SOURCEFILES_QUOTED_IF_SPACED=main.c LCD_lib.c conf.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.p1 ${OBJECTDIR}/_ext/1649653675/lcd_hd44780.p1
-POSSIBLE_DEPFILES=${OBJECTDIR}/main.p1.d ${OBJECTDIR}/_ext/1649653675/lcd_hd44780.p1.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.p1 ${OBJECTDIR}/LCD_lib.p1 ${OBJECTDIR}/conf.p1
+POSSIBLE_DEPFILES=${OBJECTDIR}/main.p1.d ${OBJECTDIR}/LCD_lib.p1.d ${OBJECTDIR}/conf.p1.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/main.p1 ${OBJECTDIR}/_ext/1649653675/lcd_hd44780.p1
+OBJECTFILES=${OBJECTDIR}/main.p1 ${OBJECTDIR}/LCD_lib.p1 ${OBJECTDIR}/conf.p1
 
 # Source Files
-SOURCEFILES=main.c ../../Alan Cruz/Downloads/YT_02_MPLAB_Lcd/ProyectoLCD.X/lcd_hd44780.c
+SOURCEFILES=main.c LCD_lib.c conf.c
 
 
 
@@ -102,13 +102,21 @@ ${OBJECTDIR}/main.p1: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@-${MV} ${OBJECTDIR}/main.d ${OBJECTDIR}/main.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/main.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/_ext/1649653675/lcd_hd44780.p1: ../../Alan\ Cruz/Downloads/YT_02_MPLAB_Lcd/ProyectoLCD.X/lcd_hd44780.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}/_ext/1649653675" 
-	@${RM} ${OBJECTDIR}/_ext/1649653675/lcd_hd44780.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/1649653675/lcd_hd44780.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1649653675/lcd_hd44780.p1 "../../Alan Cruz/Downloads/YT_02_MPLAB_Lcd/ProyectoLCD.X/lcd_hd44780.c" 
-	@-${MV} ${OBJECTDIR}/_ext/1649653675/lcd_hd44780.d ${OBJECTDIR}/_ext/1649653675/lcd_hd44780.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/1649653675/lcd_hd44780.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+${OBJECTDIR}/LCD_lib.p1: LCD_lib.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/LCD_lib.p1.d 
+	@${RM} ${OBJECTDIR}/LCD_lib.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/LCD_lib.p1 LCD_lib.c 
+	@-${MV} ${OBJECTDIR}/LCD_lib.d ${OBJECTDIR}/LCD_lib.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/LCD_lib.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/conf.p1: conf.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/conf.p1.d 
+	@${RM} ${OBJECTDIR}/conf.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/conf.p1 conf.c 
+	@-${MV} ${OBJECTDIR}/conf.d ${OBJECTDIR}/conf.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/conf.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 else
 ${OBJECTDIR}/main.p1: main.c  nbproject/Makefile-${CND_CONF}.mk 
@@ -119,13 +127,21 @@ ${OBJECTDIR}/main.p1: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@-${MV} ${OBJECTDIR}/main.d ${OBJECTDIR}/main.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/main.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/_ext/1649653675/lcd_hd44780.p1: ../../Alan\ Cruz/Downloads/YT_02_MPLAB_Lcd/ProyectoLCD.X/lcd_hd44780.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}/_ext/1649653675" 
-	@${RM} ${OBJECTDIR}/_ext/1649653675/lcd_hd44780.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/1649653675/lcd_hd44780.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/_ext/1649653675/lcd_hd44780.p1 "../../Alan Cruz/Downloads/YT_02_MPLAB_Lcd/ProyectoLCD.X/lcd_hd44780.c" 
-	@-${MV} ${OBJECTDIR}/_ext/1649653675/lcd_hd44780.d ${OBJECTDIR}/_ext/1649653675/lcd_hd44780.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/1649653675/lcd_hd44780.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+${OBJECTDIR}/LCD_lib.p1: LCD_lib.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/LCD_lib.p1.d 
+	@${RM} ${OBJECTDIR}/LCD_lib.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/LCD_lib.p1 LCD_lib.c 
+	@-${MV} ${OBJECTDIR}/LCD_lib.d ${OBJECTDIR}/LCD_lib.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/LCD_lib.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/conf.p1: conf.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/conf.p1.d 
+	@${RM} ${OBJECTDIR}/conf.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mdefault-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/conf.p1 conf.c 
+	@-${MV} ${OBJECTDIR}/conf.d ${OBJECTDIR}/conf.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/conf.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 endif
 

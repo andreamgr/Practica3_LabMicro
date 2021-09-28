@@ -1,92 +1,4 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[t ~ __interrupt . k ]
-[t T36 __interrupt ]
-"8588 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8588:     struct {
-[s S362 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S362 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
-"8598
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8598:     struct {
-[s S363 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S363 . . INT0F T0IF . INT0E T0IE PEIE GIE ]
-"8608
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8608:     struct {
-[s S364 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S364 . . GIEL GIEH ]
-"8587
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8587: typedef union {
-[u S361 `S362 1 `S363 1 `S364 1 ]
-[n S361 . . . . ]
-"8614
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8614: extern volatile INTCONbits_t INTCONbits __attribute__((address(0xFF2)));
-[v _INTCONbits `VS361 ~T0 @X0 0 e@4082 ]
-"8139
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8139: extern volatile unsigned short TMR0 __attribute__((address(0xFD6)));
-[v _TMR0 `Vus ~T0 @X0 0 e@4054 ]
-"8075
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8075:     struct {
-[s S349 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S349 . T0PS PSA T0SE T0CS T08BIT TMR0ON ]
-"8083
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8083:     struct {
-[s S350 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S350 . T0PS0 T0PS1 T0PS2 ]
-"8074
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8074: typedef union {
-[u S348 `S349 1 `S350 1 ]
-[n S348 . . . ]
-"8089
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8089: extern volatile T0CONbits_t T0CONbits __attribute__((address(0xFD5)));
-[v _T0CONbits `VS348 ~T0 @X0 0 e@4053 ]
-[p mainexit ]
-"6581
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 6581: extern volatile unsigned char ADCON1 __attribute__((address(0xFC1)));
-[v _ADCON1 `Vuc ~T0 @X0 0 e@4033 ]
-"3427
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 3427: extern volatile unsigned char TRISA __attribute__((address(0xF92)));
-[v _TRISA `Vuc ~T0 @X0 0 e@3986 ]
-"17 ./LCD_lib.h
-[; ;./LCD_lib.h: 17: void LCD_Init(void);
-[v _LCD_Init `(v ~T0 @X0 0 ef ]
-"2320 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2320:     struct {
-[s S103 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S103 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 ]
-"2329
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2329:     struct {
-[s S104 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S104 . AN0 AN1 AN2 AN3 T0CKI AN4 OSC2 ]
-"2338
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2338:     struct {
-[s S105 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S105 . . VREFM VREFP . LVDIN ]
-"2345
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2345:     struct {
-[s S106 :5 `uc 1 :1 `uc 1 ]
-[n S106 . . HLVDIN ]
-"2349
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2349:     struct {
-[s S107 :1 `uc 1 ]
-[n S107 . ULPWUIN ]
-"2319
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2319: typedef union {
-[u S102 `S103 1 `S104 1 `S105 1 `S106 1 `S107 1 ]
-[n S102 . . . . . . ]
-"2353
-[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 2353: extern volatile PORTAbits_t PORTAbits __attribute__((address(0xF80)));
-[v _PORTAbits `VS102 ~T0 @X0 0 e@3968 ]
-[v F3470 `(v ~T0 @X0 1 tf1`ul ]
-"203 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\pic18.h
-[v __delay `JF3470 ~T0 @X0 0 e ]
-[p i __delay ]
-"113 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdio.h
-[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
-"19 ./LCD_lib.h
-[; ;./LCD_lib.h: 19: void LCD_XY(int x,int y);
-[v _LCD_XY `(v ~T0 @X0 0 ef2`i`i ]
-"20
-[; ;./LCD_lib.h: 20: void LCD_Cadena(const char *);
-[v _LCD_Cadena `(v ~T0 @X0 0 ef1`*Cuc ]
 "54 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 54: __asm("SPPDATA equ 0F62h");
 [; <" SPPDATA equ 0F62h ;# ">
@@ -597,185 +509,79 @@ Version 4.0 HI-TECH Software Intermediate Code
 "8893
 [; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8893: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"14 main.c
-[; ;main.c: 14:     char buffer1[3];
-[v _buffer1 `uc ~T0 @X0 -> 3 `i e ]
+"9 conf.c
+[p x PLLDIV  =  5        ]
+"10
+[p x CPUDIV  =  OSC1_PLL2 ]
+"11
+[p x USBDIV  =  2        ]
+"14
+[p x FOSC  =  HS         ]
+"15
+[p x FCMEN  =  OFF       ]
 "16
-[; ;main.c: 16:   float distancia = 2;
-[v _distancia `f ~T0 @X0 1 e ]
-[i _distancia
--> -> 2 `i `f
-]
-"17
-[; ;main.c: 17:  int tiempo;
-[v _tiempo `i ~T0 @X0 1 e ]
-[v $root$_timer0 `(v ~T0 @X0 0 e ]
+[p x IESO  =  OFF        ]
+"19
+[p x PWRT  =  OFF        ]
+"20
+[p x BOR  =  ON          ]
 "21
-[; ;main.c: 21:  void __attribute__((picinterrupt(("")))) timer0(void){
-[v _timer0 `(v ~T36 @X0 1 ef ]
-{
-[e :U _timer0 ]
-[f ]
+[p x BORV  =  3          ]
 "22
-[; ;main.c: 22:      if(INTCONbits.TMR0IF){
-[e $ ! != -> . . _INTCONbits 0 2 `i -> 0 `i 370  ]
-{
-"23
-[; ;main.c: 23:                    TMR0 = 109;
-[e = _TMR0 -> -> 109 `i `us ]
-"24
-[; ;main.c: 24:                    distancia = distancia + 0.5;
-[e = _distancia -> + -> _distancia `d .0.5 `f ]
+[p x VREGEN  =  OFF      ]
 "25
-[; ;main.c: 25:                    INTCONbits.TMR0IF = 0;
-[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+[p x WDT  =  ON          ]
 "26
-[; ;main.c: 26:      }
-}
-[e :U 370 ]
-"27
-[; ;main.c: 27:  }
-[e :UE 369 ]
-}
-"28
-[; ;main.c: 28:  void confT0(){
-[v _confT0 `(v ~T0 @X0 1 ef ]
-{
-[e :U _confT0 ]
-[f ]
+[p x WDTPS  =  32768     ]
+"29
+[p x CCP2MX  =  ON       ]
 "30
-[; ;main.c: 30:       T0CONbits.TMR0ON = 1;
-[e = . . _T0CONbits 0 5 -> -> 1 `i `uc ]
+[p x PBADEN  =  ON       ]
 "31
-[; ;main.c: 31:       T0CONbits.T08BIT = 1;
-[e = . . _T0CONbits 0 4 -> -> 1 `i `uc ]
+[p x LPT1OSC  =  OFF     ]
 "32
-[; ;main.c: 32:       T0CONbits.T0CS = 0;
-[e = . . _T0CONbits 0 3 -> -> 0 `i `uc ]
-"33
-[; ;main.c: 33:       T0CONbits.T0SE = 1;
-[e = . . _T0CONbits 0 2 -> -> 1 `i `uc ]
-"34
-[; ;main.c: 34:       T0CONbits.PSA = 1;
-[e = . . _T0CONbits 0 1 -> -> 1 `i `uc ]
+[p x MCLRE  =  ON        ]
 "35
-[; ;main.c: 35:       T0CONbits.T0PS = 0b110;
-[e = . . _T0CONbits 0 0 -> -> 6 `i `uc ]
+[p x STVREN  =  ON       ]
+"36
+[p x LVP  =  ON          ]
 "37
-[; ;main.c: 37:       INTCONbits.TMR0IE = 1;
-[e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
+[p x ICPRT  =  OFF       ]
 "38
-[; ;main.c: 38:       INTCONbits.GIE = 1;
-[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
-"39
-[; ;main.c: 39:  }
-[e :UE 371 ]
-}
-[v $root$_main `(v ~T0 @X0 0 e ]
+[p x XINST  =  OFF       ]
+"41
+[p x CP0  =  OFF         ]
+"42
+[p x CP1  =  OFF         ]
+"43
+[p x CP2  =  OFF         ]
+"44
+[p x CP3  =  OFF         ]
 "47
-[; ;main.c: 47: int main(int argc, char** argv) {
-[v _main `(i ~T0 @X0 1 ef2`i`**uc ]
-{
-[e :U _main ]
-[v _argc `i ~T0 @X0 1 r1 ]
-[v _argv `**uc ~T0 @X0 1 r2 ]
-[f ]
+[p x CPB  =  OFF         ]
 "48
-[; ;main.c: 48:     ADCON1 = 15;
-[e = _ADCON1 -> -> 15 `i `uc ]
-"49
-[; ;main.c: 49:     int count;
-[v _count `i ~T0 @X0 1 a ]
+[p x CPD  =  OFF         ]
 "51
-[; ;main.c: 51:     TRISA = 0b00010000;
-[e = _TRISA -> -> 16 `i `uc ]
+[p x WRT0  =  OFF        ]
+"52
+[p x WRT1  =  OFF        ]
 "53
-[; ;main.c: 53:     confT0();
-[e ( _confT0 ..  ]
+[p x WRT2  =  OFF        ]
+"54
+[p x WRT3  =  OFF        ]
 "57
-[; ;main.c: 57:     LCD_Init();
-[e ( _LCD_Init ..  ]
+[p x WRTC  =  OFF        ]
+"58
+[p x WRTB  =  OFF        ]
+"59
+[p x WRTD  =  OFF        ]
 "62
-[; ;main.c: 62:   while (1) {
-[e :U 374 ]
-{
+[p x EBTR0  =  OFF       ]
+"63
+[p x EBTR1  =  OFF       ]
 "64
-[; ;main.c: 64:      distancia = 2;
-[e = _distancia -> -> 2 `i `f ]
-"66
-[; ;main.c: 66:         PORTAbits.RA5 = 1;
-[e = . . _PORTAbits 0 5 -> -> 1 `i `uc ]
-"67
-[; ;main.c: 67:       _delay((unsigned long)((10)*(20000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000000.0 `ul ]
+[p x EBTR2  =  OFF       ]
+"65
+[p x EBTR3  =  OFF       ]
 "68
-[; ;main.c: 68:        PORTAbits.RA5 = 0;
-[e = . . _PORTAbits 0 5 -> -> 0 `i `uc ]
-"71
-[; ;main.c: 71:           while(!PORTAbits.RA4);
-[e $U 376  ]
-[e :U 377 ]
-[e :U 376 ]
-[e $ ! != -> . . _PORTAbits 0 4 `i -> 0 `i 377  ]
-[e :U 378 ]
-"72
-[; ;main.c: 72:           TMR0 = 109;
-[e = _TMR0 -> -> 109 `i `us ]
-"73
-[; ;main.c: 73:           T0CONbits.TMR0ON = 1;
-[e = . . _T0CONbits 0 5 -> -> 1 `i `uc ]
-"76
-[; ;main.c: 76:        while(PORTAbits.RA4);
-[e $U 379  ]
-[e :U 380 ]
-[e :U 379 ]
-[e $ != -> . . _PORTAbits 0 4 `i -> 0 `i 380  ]
-[e :U 381 ]
-"77
-[; ;main.c: 77:         T0CONbits.TMR0ON = 0;
-[e = . . _T0CONbits 0 5 -> -> 0 `i `uc ]
-"80
-[; ;main.c: 80:         sprintf(buffer1,"%f",distancia);
-[e ( _sprintf (1 , (. , &U _buffer1 :s 1C -> _distancia `d ]
-"83
-[; ;main.c: 83:         LCD_XY(0,0);
-[e ( _LCD_XY (2 , -> 0 `i -> 0 `i ]
-"84
-[; ;main.c: 84:         LCD_Cadena("Distancia = ");
-[e ( _LCD_Cadena (1 :s 2C ]
-"85
-[; ;main.c: 85:         LCD_XY(1,1);
-[e ( _LCD_XY (2 , -> 1 `i -> 1 `i ]
-"86
-[; ;main.c: 86:         LCD_Cadena(buffer1);
-[e ( _LCD_Cadena (1 -> &U _buffer1 `*Cuc ]
-"87
-[; ;main.c: 87:         LCD_XY(1,9);
-[e ( _LCD_XY (2 , -> 1 `i -> 9 `i ]
-"88
-[; ;main.c: 88:         LCD_Cadena("cm");
-[e ( _LCD_Cadena (1 :s 3C ]
-"89
-[; ;main.c: 89:         _delay((unsigned long)((100)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"92
-[; ;main.c: 92:      _delay((unsigned long)((60)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 60 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"99
-[; ;main.c: 99:   }
-}
-[e :U 373 ]
-[e $U 374  ]
-[e :U 375 ]
-"103
-[; ;main.c: 103:     return (0);
-[e ) -> 0 `i ]
-[e $UE 372  ]
-"108
-[; ;main.c: 108: }
-[e :UE 372 ]
-}
-[p f _sprintf 8396800 ]
-[a 3C 99 109 0 ]
-[a 1C 37 102 0 ]
-[a 2C 68 105 115 116 97 110 99 105 97 32 61 32 0 ]
+[p x EBTRB  =  OFF       ]
