@@ -5,6 +5,8 @@
 [d frameptr 4065 ]
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__fpclassifyf.c
 [v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
 "7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
 "7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
@@ -37,6 +39,10 @@
 [v ___ftmul __ftmul `(f  1 e 4 0 ]
 "19 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isdigit.c
+[v _isdigit isdigit `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isspace.c
+[v _isspace isspace `(i  1 e 2 0 ]
 "5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isupper.c
 [v _isupper isupper `(i  1 e 2 0 ]
 "8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
@@ -64,6 +70,8 @@
 [v _strncmp strncmp `(i  1 e 2 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\tolower.c
 [v _tolower tolower `(i  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
 "15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul64.c
@@ -82,7 +90,7 @@
 [v _timer0 timer0 `IIH(v  1 e 1 0 ]
 "28
 [v _confT0 confT0 `(v  1 e 1 0 ]
-"47
+"48
 [v _main main `(i  1 e 2 0 ]
 [s S106 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
@@ -217,44 +225,44 @@
 [v _buffer1 buffer1 `[3]uc  1 e 3 0 ]
 "16
 [v _distancia distancia `f  1 e 4 0 ]
-"47
+"48
 [v _main main `(i  1 e 2 0 ]
 {
-"108
+"110
 } 0
 "9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
 {
 [s S797 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
 "13
-[v sprintf@f f `S797  1 a 6 106 ]
+[v sprintf@f f `S797  1 a 6 108 ]
 "12
-[v sprintf@ap ap `[1]*.39v  1 a 2 104 ]
+[v sprintf@ap ap `[1]*.39v  1 a 2 106 ]
 "9
-[v sprintf@s s `*.39uc  1 p 2 96 ]
-[v sprintf@fmt fmt `*.25Cuc  1 p 2 98 ]
+[v sprintf@s s `*.39uc  1 p 2 98 ]
+[v sprintf@fmt fmt `*.25Cuc  1 p 2 100 ]
 "23
 } 0
 "1390 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
 {
 "1393
-[v vfprintf@cfmt cfmt `*.25uc  1 a 2 94 ]
+[v vfprintf@cfmt cfmt `*.25uc  1 a 2 96 ]
 [s S823 _IO_FILE 0 ]
 "1390
-[v vfprintf@fp fp `*.39S823  1 p 2 88 ]
-[v vfprintf@fmt fmt `*.25Cuc  1 p 2 90 ]
-[v vfprintf@ap ap `*.39*.39v  1 p 2 92 ]
+[v vfprintf@fp fp `*.39S823  1 p 2 90 ]
+[v vfprintf@fmt fmt `*.25Cuc  1 p 2 92 ]
+[v vfprintf@ap ap `*.39*.39v  1 p 2 94 ]
 "1404
 } 0
 "692
 [v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
 {
 "698
-[v vfpfcnvrt@f f `d  1 a 4 83 ]
+[v vfpfcnvrt@f f `d  1 a 4 85 ]
 "694
-[v vfpfcnvrt@ct ct `[3]uc  1 a 3 80 ]
-[v vfpfcnvrt@c c `uc  1 a 1 87 ]
+[v vfpfcnvrt@ct ct `[3]uc  1 a 3 82 ]
+[v vfpfcnvrt@c c `uc  1 a 1 89 ]
 [s S823 _IO_FILE 0 ]
 "692
 [v vfpfcnvrt@fp fp `*.39S823  1 p 2 68 ]
@@ -380,9 +388,9 @@
 "3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\floorf.c
 [v _floorf floorf `(f  1 e 4 0 ]
 {
-[u S953 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S964 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "5
-[v floorf@u u `S953  1 a 4 57 ]
+[v floorf@u u `S964  1 a 4 57 ]
 "7
 [v floorf@m m `ul  1 a 4 51 ]
 "6
@@ -390,21 +398,21 @@
 "3
 [v floorf@x x `f  1 p 4 41 ]
 "4
-[v floorf@F527 F527 `S953  1 s 4 F527 ]
+[v floorf@F527 F527 `S964  1 s 4 F527 ]
 "27
 } 0
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__fpclassifyf.c
 [v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
 {
-[u S953 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S964 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "6
-[v ___fpclassifyf@u u `S953  1 a 4 26 ]
+[v ___fpclassifyf@u u `S964  1 a 4 26 ]
 "7
 [v ___fpclassifyf@e e `i  1 a 2 24 ]
 "4
 [v ___fpclassifyf@x x `f  1 p 4 16 ]
 "5
-[v ___fpclassifyf@F465 F465 `S953  1 s 4 F465 ]
+[v ___fpclassifyf@F465 F465 `S964  1 s 4 F465 ]
 "11
 } 0
 "43 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
@@ -529,10 +537,42 @@
 [v ___awdiv@divisor divisor `i  1 p 2 18 ]
 "41
 } 0
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+{
+"6
+[v atoi@n n `i  1 a 2 36 ]
+[v atoi@neg neg `i  1 a 2 29 ]
+"4
+[v atoi@s s `*.25Cuc  1 p 2 23 ]
+"16
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isspace.c
+[v _isspace isspace `(i  1 e 2 0 ]
+{
+[v isspace@c c `i  1 p 2 16 ]
+"8
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isdigit.c
+[v _isdigit isdigit `(i  1 e 2 0 ]
+{
+[v isdigit@c c `i  1 p 2 16 ]
+"8
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 20 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 16 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 18 ]
+"53
+} 0
 "28 C:\Users\Microcontroladores\Practica2.1.X\main.c
 [v _confT0 confT0 `(v  1 e 1 0 ]
 {
-"39
+"40
 } 0
 "85 C:\Users\Microcontroladores\Practica2.1.X\LCD_lib.c
 [v _LCD_XY LCD_XY `(v  1 e 1 0 ]

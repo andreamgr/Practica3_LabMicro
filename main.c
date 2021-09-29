@@ -31,9 +31,10 @@
       T0CONbits.T08BIT = 1;  //modo 8 bits
       T0CONbits.T0CS = 0; //modo temporizador
       T0CONbits.T0SE = 1; //leer bajadas
-      T0CONbits.PSA = 1;  //con preescalador
+      T0CONbits.PSA = 1;  //sin preescalador
       T0CONbits.T0PS = 0b110; 
-      
+                         TMR0 = 109;
+
       INTCONbits.TMR0IE = 1;      // Habilitamos las interrupción por desborde de TIMER0
       INTCONbits.GIE = 1;         // Habilitamos las interrupciones globales
  }
@@ -77,19 +78,20 @@ int main(int argc, char** argv) {
         T0CONbits.TMR0ON = 0;   
         
   
-        sprintf(buffer1,"%f",distancia);  //Texto alineado a la izquierda
+        sprintf(buffer1,"%.2f",distancia);  //Texto alineado a la izquierda
 
         
         LCD_XY(0,0);
         LCD_Cadena("Distancia = ");
+         __delay_ms(100);
+       
         LCD_XY(1,1);
         LCD_Cadena(buffer1);
+            __delay_ms(100);
+                 
         LCD_XY(1,9);
         LCD_Cadena("cm");
-        __delay_ms(100);
-    
-  
-     __delay_ms(60);
+     __delay_ms(100);
          
 
   

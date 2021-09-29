@@ -5798,6 +5798,7 @@ void LCD_Data(char);
       T0CONbits.T0SE = 1;
       T0CONbits.PSA = 1;
       T0CONbits.T0PS = 0b110;
+                         TMR0 = 109;
 
       INTCONbits.TMR0IE = 1;
       INTCONbits.GIE = 1;
@@ -5842,19 +5843,20 @@ int main(int argc, char** argv) {
         T0CONbits.TMR0ON = 0;
 
 
-        sprintf(buffer1,"%f",distancia);
+        sprintf(buffer1,"%.2f",distancia);
 
 
         LCD_XY(0,0);
         LCD_Cadena("Distancia = ");
+         _delay((unsigned long)((100)*(20000000/4000.0)));
+
         LCD_XY(1,1);
         LCD_Cadena(buffer1);
+            _delay((unsigned long)((100)*(20000000/4000.0)));
+
         LCD_XY(1,9);
         LCD_Cadena("cm");
-        _delay((unsigned long)((100)*(20000000/4000.0)));
-
-
-     _delay((unsigned long)((60)*(20000000/4000.0)));
+     _delay((unsigned long)((100)*(20000000/4000.0)));
 
 
 
